@@ -1,0 +1,76 @@
+nav {
+  height: 80px;
+  background-color: rgb(215, 230, 215);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  overflow: hidden;
+}
+
+nav a img {
+  height: 40px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  padding: 2.5px 5px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: capitalize;
+  margin-right: 5px;
+}
+
+li:hover {
+  color: rgb(215, 230, 215);
+  background-color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.ToggleBars {
+  height: 35%;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  display: none;
+}
+
+.ToggleBars span {
+  width: 100%;
+  height: 3px;
+  border-radius: 3px;
+  background-color: white;
+}
+
+/* 100% width */
+span:nth-child(1) {
+  width: 100%;
+}
+
+/* 75% width */
+span:nth-child(2) {
+  width: 75%;
+}
+
+/* 50% width */
+span:nth-child(3) {
+  width: 50%;
+}
+
+/* media queries */
+@media screen and (max-width: 960px) {
+  .ToggleBars {
+    display: flex;
+  }
+
+  ul {
+    display: none;
+  }
+}
